@@ -9,7 +9,6 @@ terraform {
 
 provider "yandex" {
   token                    = "y0_AgAAAAAF-iSuAATuwQAAAADS4lwJMNcemp1sRNKi93B7yjgLtyQNd0w"
-  service_account_key_file = "/home/bloodon/key.json"
   cloud_id                 = "b1g6d4vgtjmffh3gvpnb"
   folder_id                = "b1gqrdopu5ud97k191qu"
   zone                     = "ru-central1-b"
