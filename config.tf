@@ -2,11 +2,11 @@ terraform {
   required_providers {
     yandex = {
       source = "yandex-cloud/yandex"
-      version = "0.81.0"
     }
   }
+  required_version = ">= 0.13"
 }
 
 provider "yandex" {
-  # Configuration options
+  zone = "<зона доступности по умолчанию>"
 }
