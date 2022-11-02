@@ -11,6 +11,11 @@ provider "yandex" {
   zone = "ru-central1-b"
 }
 
+resource "yandex_compute_instance" "vm-1" {
+  name = "terraform1"
+}
+
+/*
 resource "yandex_compute_instance" "default" {
   name        = "test"
   platform_id = "standard-v1"
@@ -26,8 +31,12 @@ resource "yandex_compute_instance" "default" {
     }
   }
 
+  network_interface {
+    subnet_id = "${yandex_vpc_subnet.foo.id}"
+  }
   metadata = {
     foo      = "bar"
     ssh-keys = "ubuntu:${file("/home/bloodon/.ssh/id_rsa.pub")}"
   }
 }
+*/
