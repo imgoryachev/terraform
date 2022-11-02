@@ -11,10 +11,6 @@ provider "yandex" {
   zone = "ru-central1-b"
 }
 
-resource "yandex_compute_instance" "vm-1" {
-  name = "terraform1"
-}
-
 /*
 resource "yandex_compute_instance" "default" {
   name        = "test"
